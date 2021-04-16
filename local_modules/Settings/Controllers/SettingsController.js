@@ -145,8 +145,6 @@ class SettingsController extends EventEmitter
 
 		function _proceedTo_loadStateFromRecord(record_doc)
 		{
-			console.log(record_doc);
-			console.log(typeof(record_doc));
 			self._id = record_doc._id || undefined
 			//
 			self.specificAPIAddressURLAuthority = record_doc.specificAPIAddressURLAuthority
@@ -388,7 +386,6 @@ class SettingsController extends EventEmitter
 							}
 							self._id = _id // must save it back
 							console.log("✅  Saved newly inserted " + CollectionName + " record with _id " + self._id + ".")
-							console.log(jsonString);
 							fn()
 						}
 					)
