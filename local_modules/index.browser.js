@@ -4,9 +4,7 @@ import RootView from './MainWindow/Views/RootView.Lite.web' // electron uses .we
 import setup_utils from './MMAppRendererSetup/renderer_setup.browser'
 import MyMoneroLibAppBridge from '@mymonero/mymonero-app-bridge'
 import indexContextBrowser from './MainWindow/Models/index_context.browser'
-import { Plugins } from '@capacitor/core'
-
-const { App } = Plugins
+import { App } from '@capacitor/app'
 
 window.BootApp = function () { // encased in a function to prevent scope being lost/freed on mobile
   const isDebug = false

@@ -27,9 +27,7 @@
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 import Swal from 'sweetalert2'
-import { Plugins } from '@capacitor/core';
-
-const { Clipboard } = Plugins;
+import { Clipboard } from '@capacitor/clipboard';
 
 "use strict"
 
